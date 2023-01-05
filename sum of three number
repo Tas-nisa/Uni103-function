@@ -1,0 +1,14 @@
+#include<stdio.h>
+int cal_sum(int a,int b,int c){
+    int sum=a+b+c;
+    return sum;
+}
+
+int main(){
+    int n1,n2,n3,sum;
+    printf("Enter three number to calculate the sum :\n");
+    scanf("\n%d\n%d\n%d",&n1,&n2,&n3);
+
+    sum=cal_sum(n1,n2,n3);
+    printf("the sum of the numbers = %d",sum);
+}
