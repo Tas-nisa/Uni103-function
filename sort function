@@ -2,8 +2,8 @@
 void sort(int a[],int len){
     int i,j,temp;
     //bubble algorithm for sorting
-    for(i=0;i<len-2;i++){
-        for(j=i+1;j<len-1;j++){
+    for(i=0;i<=len-2;i++){
+        for(j=i+1;j<=len-1;j++){
             if(a[i]>a[j]){
                 temp=a[i];
                 a[i]=a[j];
