@@ -1,0 +1,18 @@
+#include<stdio.h>
+int digitcount(int a){
+    int count=0;
+    do{
+        a=a/10;
+        count++;
+    }while(a>0);
+
+    return count;
+}
+int main(){
+    int num,result;
+    printf("Enter any positive integer :");
+    scanf("%d",&num);
+
+    result=digitcount(num);
+    printf("There are %d digit in that positive integer ",result);
+}
