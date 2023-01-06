@@ -1,0 +1,27 @@
+#include<stdio.h>
+int calculate_grade(int num){
+    if(num>=87&&num<=100)
+        return 'A';
+    else if(num>=77&&num<87)
+        return 'B';
+    else if(num>=67&&num<77)
+        return 'C';
+    else if(num>=60&&num<67)
+        return 'D';
+    else if(num>=0&&num<60)
+        return 'F';
+    else
+        return 'I';
+
+
+}
+int main(){
+    int marks;
+    char grade;
+    printf("Enter marks :");
+    scanf("%d",&marks);
+
+    grade=calculate_grade(marks);
+
+    printf("Letter grade is = %c",grade);
+}
