@@ -1,0 +1,16 @@
+#include<stdio.h>
+int cal_power(int b,int e){
+    int i,value;
+    for(i=1,value=1;i<=e;i++)
+        value*=b;
+    return value;
+}
+int main(){
+    int base,exp,result;
+    printf("Enter the base number :");
+    scanf("%d",&base);
+    printf("Enter the exponent number :");
+    scanf("%d",&exp);
+    result=cal_power(base,exp);
+    printf("The value of the calculation = %d ",result);
+}
