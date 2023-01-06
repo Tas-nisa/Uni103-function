@@ -1,0 +1,18 @@
+#include<stdio.h>
+int change_case(char c){
+    char c1;
+    if(c>='A'&&c<='Z')
+        c1=c+32;
+    else
+        c1=c-32;
+    return c1;
+
+}
+int main(){
+    char ch,cng;
+    printf("Enter a character :");
+    scanf(" %c",&ch);
+
+    cng=change_case(ch);
+    printf("The opposite case of %c = %c ",ch,cng);
+}
