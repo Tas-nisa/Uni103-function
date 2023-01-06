@@ -1,0 +1,17 @@
+#include<stdio.h>
+int swap(int *a,int *b){
+    int temp;
+    temp=*a;
+    *a=*b;
+    *b=temp;
+}
+int main(){
+    int n1,n2;
+    printf("Enter the value of a :");
+    scanf("%d",&n1);
+    printf("Enter the value of b :");
+    scanf("%d",&n2);
+
+    swap(&n1,&n2);
+    printf("After swapping the value of \na=%d\nb=%d",n1,n2);
+}
