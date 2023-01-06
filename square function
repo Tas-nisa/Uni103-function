@@ -1,0 +1,14 @@
+#include<stdio.h>
+int square(int a){
+    int result;
+    result=a*a;
+    return result;
+}
+int main(){
+    int num,result;
+    printf("Enter any number :");
+    scanf("%d",&num);
+
+    result=square(num);
+    printf("The value of the calculation = %d ",result);
+}
