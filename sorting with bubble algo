@@ -1,0 +1,24 @@
+#include<stdio.h>
+int search_number(int a[],int len,int num){
+    int i;
+    for(i=0;i<len;i++){
+        if(a[i]==num)
+            return 1;
+
+    }
+
+}
+int main(){
+    int arr[10],i,n,p;
+    printf("Enter the array values :");
+    for(i=0;i<3;i++)
+        scanf("%d",&arr[i]);
+    printf("Enter the number to search :");
+    scanf("%d",&n);
+    p=search_number(arr,3,n);
+    if(p==1)
+        printf("The number is found ");
+    else
+        printf("The number is not found");
+
+}
